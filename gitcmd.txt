@@ -34,4 +34,29 @@
 > git config --local --unset credential.helper
 	# remove the credential helper setting specifically for the current local Git repository
 
+
+
+Accede a tu carpeta local (desde la Terminal)
+
+Clonar Repositorio.
+
+git clone https://github.com/rmzneydev/economy-survival-simulator.git
+cd economy-survival-simulator
+cd devs
+
+Crear rama y acceder a ella.
+git checkout -b "feature-nombre-tarea"
+
+
+Hacer cambios y commits.
+git add .
+git commit -m "feat: agrega formulario de login"
+
+hacer el push de la rama.
+git push origin feature-nombre-tarea
+
+
+ir a la rama.
+git switch "feature-nombre-tarea"
+
 https://git-scm.com/cheat-sheet
