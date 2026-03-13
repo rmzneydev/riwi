@@ -10,23 +10,31 @@ def selectec_figure(num_fig, figura):
     
     print("MENU DE OPERACIONES")
     
-    if num_fig == 1:
+    if num_fig == 1: # Triángulo
         print(operaciones[1])
-    elif num_fig == 2:
-        print(operaciones)
-    elif num_fig == 3:
+        print(operaciones[2])
+        print(operaciones[0])
+    elif num_fig == 2:# Hexágono
+        print(operaciones[1])
+        print(operaciones[2])
+        print(operaciones[0])
+    elif num_fig == 3:# Rectángulo
+        print(operaciones[1])
+        print(operaciones[2])
+        print(operaciones[0])
+    elif num_fig == 4:# Círculo
+        print(operaciones[1])
+        print(operaciones[2])
+        print(operaciones[0])
+    elif num_fig == 5:# Triángulo rectángulo
         print("")
-    elif num_fig == 4:
+    elif num_fig == 6:# Cubo
         print("")
-    elif num_fig == 5:
+    elif num_fig == 7:# Esfera
         print("")
-    elif num_fig == 6:
+    elif num_fig == 8:# Cilindro
         print("")
-    elif num_fig == 7:
-        print("")
-    elif num_fig == 8:
-        print("")
-    elif num_fig == 9:
+    elif num_fig == 9:# Prisma rectangular
         print("")
     
 while not salir:
