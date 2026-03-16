@@ -7,12 +7,12 @@ def menu_calculos(num_fig):
     calc_x_figura = []
     
     num_fig -=1
-    
+
     if num_fig == 4: # CIRCLE CASE
         calc_x_figura.append(calculos[4])
         calc_x_figura.append(calculos[1])
         calc_x_figura.append(calculos[2])
-    elif num_fig <=5: # 2D FIGURES
+    elif num_fig <=4: # 2D FIGURES
         calc_x_figura.append(calculos[0])
         calc_x_figura.append(calculos[1])
         calc_x_figura.append(calculos[2])
@@ -62,7 +62,9 @@ while not salir:
     valid_sel = False
     while not valid_sel and menu == 2:
         figura = figuras[num_fig-1]
-        print(f"\nFigura Seleccionada: (#{num_fig}. {figura})")
+        print("\n" + "=" *50)
+        print(f"[Figura Seleccionada] -> (#{num_fig}. {figura})")
+        print("=" *50)
         calc_disp = menu_calculos(num_fig)
         try:
             seleccion = input("Ingrese: (#) Numero de calculo / (R) Volver al menu de figuras / (X) Salir: ")
